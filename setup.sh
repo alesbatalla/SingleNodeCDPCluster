@@ -72,7 +72,7 @@ wget https://archive.cloudera.com/cm7/7.0/redhat7/yum/cloudera-manager-trial.rep
 cat - >/etc/yum.repos.d/MariaDB.repo <<EOF
 [mariadb]
 name = MariaDB
-baseurl = http://yum.mariadb.org/10.1/centos7-amd64
+baseurl = https://yum.mariadb.org/10.1/centos7-amd64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 EOF
@@ -84,7 +84,6 @@ yum repolist
 
 ## CM
 yum install -y cloudera-manager-agent cloudera-manager-daemons cloudera-manager-server
-
 ## MariaDB
 yum install -y MariaDB-server MariaDB-client
 cat conf/mariadb.config > /etc/my.cnf
