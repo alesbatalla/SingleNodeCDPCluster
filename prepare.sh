@@ -6,7 +6,7 @@ echo  "net.bridge.bridge-nf-call-arptables = 1" >> /etc/sysctl.conf
 sysctl net.bridge.bridge-nf-call-ip6tables=1
 sysctl net.bridge.bridge-nf-call-iptables=1
 sysctl net.bridge.bridge-nf-call-arptables=1
-yum install -y nfs-utils nmap-ncat libtool-ltdl libcgroup policycoreutils-python ntp socat conntrack-tools
+yum install -y git nfs-utils nmap-ncat libtool-ltdl libcgroup policycoreutils-python ntp socat conntrack-tools
 
 echo "-- modify partitions from D16_v3 to install cloudera"
 lsblk

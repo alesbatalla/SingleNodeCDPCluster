@@ -40,8 +40,9 @@ To install Schema Registry, you must use an appropriate template file, like `all
   - to allow the VM's own IP, for all ports.
 - ssh into VM and copy this repo.
 
-```
+``` bash
 sudo su -
+# sh prepare.sh
 yum install -y git
 git clone https://github.com/fabiog1901/SingleNodeCDPCluster.git
 cd SingleNodeCDPCluster
@@ -78,9 +79,9 @@ You can also check the CDSW deployment status on CM > CDSW service > Instances >
 
 To find out what the docker device mount point is, use `lsblk`. See below examples:
 
-
 AWS, using a M5.2xlarge or M5.4xlarge
-```
+
+``` other
 $ lsblk
 NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 nvme0n1     259:1    0  100G  0 disk
@@ -91,7 +92,8 @@ $ ./setup.sh aws templates/iot_workshop.json /dev/nvme1n1
 ```
 
 Azure Standard D8s v3 or Standard D16s v3
-```
+
+``` bash
 $ lsblk
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 fd0      2:0    1    4K  0 disk
