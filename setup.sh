@@ -84,6 +84,7 @@ yum repolist
 
 ## CM
 yum install -y cloudera-manager-agent cloudera-manager-daemons cloudera-manager-server
+
 ## MariaDB
 yum install -y MariaDB-server MariaDB-client
 cat conf/mariadb.config > /etc/my.cnf

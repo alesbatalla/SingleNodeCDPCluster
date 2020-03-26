@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_cw_name": {
+            "value": null
+        },
+        "disks_cw_OsDisk_1_33e850cbb9564fddb80a62948fffe504_externalid": {
+            "value": null
+        },
+        "disks_cw_DataDisk_0_externalid": {
+            "value": null
+        },
+        "disks_cw_DataDisk_1_externalid": {
+            "value": null
+        },
+        "networkInterfaces_cw796_externalid": {
+            "value": null
+        }
+    }
+}

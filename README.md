@@ -34,6 +34,8 @@ $ ls -l /root/
 To install Schema Registry, you must use an appropriate template file, like `all.json`.
 
 ### Configuration and installation
+
+- Review /azure_templates dir to create a VM with disk.
 - If you created the VM on Azure and need to resize the OS disk, here are the [instructions](scripts/how-to-resize-os-disk.md).
 - add 2 inbound rules to the Security Group:
   - to allow your IP only, for all ports.
@@ -46,6 +48,9 @@ sudo su -
 yum install -y git
 git clone https://github.com/alesbatalla/SingleNodeCDPCluster
 cd SingleNodeCDPCluster
+# sh prepare.sh
+nohup ./setup.sh azure templates/iot_workshop.json /dev/sdc >log.txt &
+# sh after.sh
 ```
 
 The script `setup.sh` takes 3 arguments:
