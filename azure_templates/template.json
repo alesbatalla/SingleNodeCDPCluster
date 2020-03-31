@@ -6,6 +6,18 @@
             "defaultValue": "cdsw",
             "type": "String"
         },
+        "disks_cw_OsDisk_1_33e850cbb9564fddb80a62948fffe504_externalid": {
+            "defaultValue": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/SANS1WEURSGGENERIGENE001/providers/Microsoft.Compute/disks/cdsw_OsDisk_1",
+            "type": "String"
+        },
+        "disks_cw_DataDisk_0_externalid": {
+            "defaultValue": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Compute/disks/cdsw_DataDisk_0",
+            "type": "String"
+        },
+        "disks_cw_DataDisk_1_externalid": {
+            "defaultValue": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Compute/disks/cdsw_DataDisk_1",
+            "type": "String"
+        },
         "networkInterfaces_cw796_externalid": {
             "defaultValue": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Network/networkInterfaces/cdsw_ni_1",
             "type": "String"
