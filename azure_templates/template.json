@@ -43,12 +43,11 @@
                     },
                     "osDisk": {
                         "osType": "Linux",
-                        "name": "[concat(parameters('virtualMachines_cw_name'), '_OsDisk_1_33e850cbb9564fddb80a62948fffe504')]",
+                        "name": "[concat(parameters('virtualMachines_cw_name'), '_OsDisk_1')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
-                            "storageAccountType": "Standard_LRS",
-                            "id": "[parameters('disks_cw_OsDisk_1_33e850cbb9564fddb80a62948fffe504_externalid')]"
+                            "storageAccountType": "Standard_LRS"
                         },
                         "diskSizeGB": 30
                     },
