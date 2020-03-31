@@ -32,6 +32,9 @@
         "virtualMachineRG": {
             "value": "sans1weursggenerigene001"
         },
+        "osDiskName": {
+            "value": "cdsw_OSDisk_0"
+        },		
         "osDiskType": {
             "value": "Standard_LRS"
         },

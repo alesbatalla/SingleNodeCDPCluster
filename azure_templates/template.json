@@ -31,6 +31,9 @@
         },
         "virtualMachineRG": {
             "type": "string"
+        },		
+        "osDiskName": {
+            "type": "string"
         },
         "osDiskType": {
             "type": "string"
@@ -138,6 +141,7 @@
                 },
                 "storageProfile": {
                     "osDisk": {
+						"name": "[parameters('osDiskName')]"
                         "createOption": "fromImage",
                         "managedDisk": {
                             "storageAccountType": "[parameters('osDiskType')]"
