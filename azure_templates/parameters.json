@@ -2,20 +2,107 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualMachines_cw_name": {
-            "value": "cdsw_example"
+        "location": {
+            "value": "westeurope"
         },
-        "disks_cw_OsDisk_1_33e850cbb9564fddb80a62948fffe504_externalid": {
-            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/SANS1WEURSGGENERIGENE001/providers/Microsoft.Compute/disks/cdsw_example_OsDisk_1"
+        "networkInterfaceName": {
+            "value": "cdsw_ni_1"
         },
-        "disks_cw_DataDisk_0_externalid": {
-            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Compute/disks/cdsw_example_DataDisk_0"
+        "enableAcceleratedNetworking": {
+            "value": true
         },
-        "disks_cw_DataDisk_1_externalid": {
-            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Compute/disks/cdsw_example_DataDisk_1"
+        "subnetName": {
+            "value": "sans1weusntplatfoglob001"
         },
-        "networkInterfaces_cw796_externalid": {
-            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Network/networkInterfaces/cdsw_example_ni_1"
+        "virtualNetworkId": {
+            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursgplatfoglob001/providers/Microsoft.Network/virtualNetworks/sans1weuvntplatfoglob001"
+        },
+        "publicIpAddressName": {
+            "value": "cdsw-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "cdsw"
+        },
+        "virtualMachineRG": {
+            "value": "sans1weursggenerigene001"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "dataDisks": {
+            "value": [
+                {
+                    "lun": 0,
+                    "createOption": "attach",
+                    "caching": "ReadWrite",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "cdsw_DataDisk_0",
+                    "storageAccountType": null,
+                    "diskSizeGB": null,
+                    "diskEncryptionSet": {
+                        "id": null
+                    }
+                },
+                {
+                    "lun": 1,
+                    "createOption": "attach",
+                    "caching": "ReadWrite",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "cdsw_DataDisk_1",
+                    "storageAccountType": null,
+                    "diskSizeGB": null,
+                    "diskEncryptionSet": {
+                        "id": null
+                    }
+                }
+            ]
+        },
+        "dataDiskResources": {
+            "value": [
+                {
+                    "name": "cdsw_DataDisk_0",
+                    "sku": "StandardSSD_LRS",
+                    "properties": {
+                        "diskSizeGB": 256,
+                        "creationData": {
+                            "createOption": "empty"
+                        }
+                    }
+                },
+                {
+                    "name": "cdsw_DataDisk_1",
+                    "sku": "StandardSSD_LRS",
+                    "properties": {
+                        "diskSizeGB": 256,
+                        "creationData": {
+                            "createOption": "empty"
+                        }
+                    }
+                }
+            ]
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D16_v3"
+        },
+        "adminUsername": {
+            "value": "cdsw"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+sRdqC/Vp7BxOPa9oW7NoQN3uI0nprWPd77D4y/m9cHWmcdEBBJYEXTsExhk8YvmsL3DXuEo3bONAoc7fPXw59kRb5gUvbQE0HkW0zmj3kAE0K0dmobfwnU3c2G2+8BZ2f2p709aXjmFY22L89zaLb+OkJIolFMv8x5XSXZSJIZ+Ql+l3fTnj3oj4M8UWt0Qpa6Ka564u+y7L0XIvJws9hCZf++M18sU/BkBnqCcexwtwIAtnryu/kC6t0J+FNgSiQptVkIOoRWgHDsyleLsJBztPdSHAAiVmEFqkbHMoCAXe+kZ5Wk+OebEAqQWJ0Cns4yoqv7s9MPFadYRo7anl7TxVMJ8zq6xUPZ6089NjX7l/MnTcXQiOdk5qf/9KIqUwkl/QGZjukzNCRvTy2HkcB2IREdUCyJnAlzCMmpd6nEfDFxNVhLgvr2wTgO8zmqADC3X+WKz+WwvdS/abBxZGfzLVsu1QmbByq+yKb0vdYPVqD0ZXN9psl+N57NWQrGRkzBcy9IGg+Gp7kyY5u8c7QMwsJX5sog7auB0XozM+cAFSyJhvepMAMsczp1yd8oSuH/ueQ/p59tzDAHmifYJZS8wODKbm7hfF9e9kSq7dKjpwfwIDsaJ0JRpklt/HJsDEdZoEu/RIb4NNMSR0oWsO0pil82f71xnznfLbONSb5w== alejandro.batalla@extern.isban.com"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "sans1weursggenerigene001"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Storage/storageAccounts/sans1weursggenerigene001"
         }
     }
 }
