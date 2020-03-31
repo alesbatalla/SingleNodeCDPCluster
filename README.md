@@ -43,8 +43,8 @@ az vm delete  --name cdsw   --resource-group  sans1weursggenerigene001  -y
 az disk delete --name cdsw_OSDisk_0 --resource-group sans1weursggenerigene001  -y
 az disk delete --name cdsw_DataDisk_0 --resource-group sans1weursggenerigene001 -y
 az disk delete --name cdsw_DataDisk_1 --resource-group sans1weursggenerigene001 -y
-az network nic delete --name cdsw_ni_1 --resource-group sans1weursggenerigene001 -y
-az network public-ip delete -g sans1weursggenerigene001 -n cdsw-ip -y
+az network nic delete --name cdsw_ni_1 --resource-group sans1weursggenerigene001
+az network public-ip delete -g sans1weursggenerigene001 -n cdsw-ip
 ```
 
 
