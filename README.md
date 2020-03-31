@@ -36,6 +36,18 @@ To install Schema Registry, you must use an appropriate template file, like `all
 ### Configuration and installation
 
 - Review /azure_templates dir to create a VM with disk.
+``` bash
+az deployment group create -g sans1weursggenerigene001 --name cdsw_dg --template-file azure_templates/template.json --parameters @azure_templates/parameters.json
+
+az vm delete  --name cdsw   --resource-group  sans1weursggenerigene001  -y
+az disk delete --name cdsw_OSDisk_0 --resource-group sans1weursggenerigene001  -y
+az disk delete --name cdsw_DataDisk_0 --resource-group sans1weursggenerigene001 -y
+az disk delete --name cdsw_DataDisk_1 --resource-group sans1weursggenerigene001 -y
+az network nic delete --name cdsw_ni_1 --resource-group sans1weursggenerigene001 -y
+az network public-ip delete -g sans1weursggenerigene001 -n cdsw-ip -y
+```
+
+
 - If you created the VM on Azure and need to resize the OS disk, here are the [instructions](scripts/how-to-resize-os-disk.md).
 - add 2 inbound rules to the Security Group:
   - to allow your IP only, for all ports.

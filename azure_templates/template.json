@@ -103,7 +103,7 @@
                 "publicIpAllocationMethod": "[parameters('publicIpAddressType')]",
                 "dnsSettings": {
                     "domainNameLabel": "cloudman"
-                },
+                }
             },
             "sku": {
                 "name": "[parameters('publicIpAddressSku')]"
