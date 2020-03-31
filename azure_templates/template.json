@@ -102,7 +102,7 @@
             "properties": {
                 "publicIpAllocationMethod": "[parameters('publicIpAddressType')]",
                 "dnsSettings": {
-                    "domainNameLabel": "cloudman"
+                    "domainNameLabel": "cdsw"
                 }
             },
             "sku": {
