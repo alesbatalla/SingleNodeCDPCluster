@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_cw_name": {
-            "value": null
+            "value": "cdsw_example"
         },
         "disks_cw_OsDisk_1_33e850cbb9564fddb80a62948fffe504_externalid": {
-            "value": null
+            "value": "cdsw_example_so_disk"
         },
         "disks_cw_DataDisk_0_externalid": {
-            "value": null
+            "value": "cdsw_example_disk0"
         },
         "disks_cw_DataDisk_1_externalid": {
-            "value": null
+            "value": "cdsw_example_disk1"
         },
         "networkInterfaces_cw796_externalid": {
-            "value": null
+            "value": "cdsw_example_ni"
         }
     }
 }
