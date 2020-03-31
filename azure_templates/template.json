@@ -59,7 +59,8 @@
                             "caching": "ReadOnly",
                             "writeAcceleratorEnabled": false,
                             "managedDisk": {
-                                "storageAccountType": "StandardSSD_LRS"
+                                "storageAccountType": "StandardSSD_LRS",
+                                "id": "[parameters('disks_cw_DataDisk_0_externalid')]"
                             },
                             "diskSizeGB": 256,
                             "toBeDetached": false
@@ -71,7 +72,8 @@
                             "caching": "ReadOnly",
                             "writeAcceleratorEnabled": false,
                             "managedDisk": {
-                                "storageAccountType": "StandardSSD_LRS"
+                                "storageAccountType": "StandardSSD_LRS",
+                                "id": "[parameters('disks_cw_DataDisk_1_externalid')]"
                             },
                             "diskSizeGB": 256,
                             "toBeDetached": false
