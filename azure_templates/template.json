@@ -20,6 +20,9 @@
         "publicIpAddressName": {
             "type": "string"
         },
+        "publicDnsName": {
+            "type": "string"
+        },		
         "publicIpAddressType": {
             "type": "string"
         },
@@ -102,7 +105,7 @@
             "properties": {
                 "publicIpAllocationMethod": "[parameters('publicIpAddressType')]",
                 "dnsSettings": {
-                    "domainNameLabel": "cdsw"
+                    "domainNameLabel": "[parameters('publicIpAddressName')]"
                 }
             },
             "sku": {

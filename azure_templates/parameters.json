@@ -20,6 +20,9 @@
         "publicIpAddressName": {
             "value": "cdsw-ip"
         },
+        "publicDnsName": {
+            "value": "cdswip"
+        },		
         "publicIpAddressType": {
             "value": "Dynamic"
         },
