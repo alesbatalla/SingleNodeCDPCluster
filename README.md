@@ -65,13 +65,12 @@ az network public-ip delete -g sans1weursggenerigene001 -n cdsw-ip
 
 ``` bash
 sudo su -
-# sh prepare.sh
-yum install -y git
-git clone https://github.com/alesbatalla/SingleNodeCDPCluster
-cd SingleNodeCDPCluster
-# sh prepare.sh
+# yum install -y git
+# git clone https://github.com/alesbatalla/SingleNodeCDPCluster
+cd /var/lib/waagent/custom-script/download/0/SingleNodeCDPCluster
+sh prepare.sh
 nohup ./setup.sh azure templates/iot_workshop.json /dev/sdc >log.txt &
-# sh after.sh
+sh after.sh
 ```
 
 The script `setup.sh` takes 3 arguments:
