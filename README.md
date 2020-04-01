@@ -38,6 +38,15 @@ To install Schema Registry, you must use an appropriate template file, like `all
 - Review /azure_templates dir to create a VM with disk.
 ``` bash
 az deployment group create -g sans1weursggenerigene001 --name cdsw_dg --template-file azure_templates/template.json --parameters @azure_templates/parameters.json
+az vm extension set \
+  --publisher Microsoft.Azure.Extensions \
+  --version 2.0 \
+  --name CustomScript \
+  --vm-name cdsw \
+  --resource-group sans1weursggenerigene001 \
+  --settings '{"commandToExecute":"sudo yum install -y git && sudo git clone https://github.com/alesbatalla/SingleNodeCDPCluster"}'
+
+
 
 az vm delete  --name cdsw   --resource-group  sans1weursggenerigene001  -y
 az disk delete --name cdsw_OSDisk_0 --resource-group sans1weursggenerigene001  -y
