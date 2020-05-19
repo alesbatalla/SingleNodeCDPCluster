@@ -33,7 +33,7 @@
             "value": "cdsw"
         },
         "virtualMachineRG": {
-            "value": "sans1weursggenerigene001"
+            "value": "sans1weursgcldk8stech001"
         },
         "osDiskName": {
             "value": "cdsw_OSDisk_0"
@@ -105,10 +105,10 @@
             "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+sRdqC/Vp7BxOPa9oW7NoQN3uI0nprWPd77D4y/m9cHWmcdEBBJYEXTsExhk8YvmsL3DXuEo3bONAoc7fPXw59kRb5gUvbQE0HkW0zmj3kAE0K0dmobfwnU3c2G2+8BZ2f2p709aXjmFY22L89zaLb+OkJIolFMv8x5XSXZSJIZ+Ql+l3fTnj3oj4M8UWt0Qpa6Ka564u+y7L0XIvJws9hCZf++M18sU/BkBnqCcexwtwIAtnryu/kC6t0J+FNgSiQptVkIOoRWgHDsyleLsJBztPdSHAAiVmEFqkbHMoCAXe+kZ5Wk+OebEAqQWJ0Cns4yoqv7s9MPFadYRo7anl7TxVMJ8zq6xUPZ6089NjX7l/MnTcXQiOdk5qf/9KIqUwkl/QGZjukzNCRvTy2HkcB2IREdUCyJnAlzCMmpd6nEfDFxNVhLgvr2wTgO8zmqADC3X+WKz+WwvdS/abBxZGfzLVsu1QmbByq+yKb0vdYPVqD0ZXN9psl+N57NWQrGRkzBcy9IGg+Gp7kyY5u8c7QMwsJX5sog7auB0XozM+cAFSyJhvepMAMsczp1yd8oSuH/ueQ/p59tzDAHmifYJZS8wODKbm7hfF9e9kSq7dKjpwfwIDsaJ0JRpklt/HJsDEdZoEu/RIb4NNMSR0oWsO0pil82f71xnznfLbONSb5w== alejandro.batalla@extern.isban.com"
         },
         "diagnosticsStorageAccountName": {
-            "value": "sans1weursggenerigene001"
+            "value": "sans1weursgcldk8stech001"
         },
         "diagnosticsStorageAccountId": {
-            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursggenerigene001/providers/Microsoft.Storage/storageAccounts/sans1weursggenerigene001"
+            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursgcldk8stech001/providers/Microsoft.Storage/storageAccounts/sans1weursgcldk8stech001"
         }
     }
 }
