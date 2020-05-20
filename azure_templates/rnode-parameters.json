@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "rnode-ni"
+        },
+        "subnetName": {
+            "value": "sans1weusntplatfoglob001"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursgplatfoglob001/providers/Microsoft.Network/virtualNetworks/sans1weuvntplatfoglob001"
+        },
+        "publicIpAddressName": {
+            "value": "rnode-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "rnode"
+        },
+        "virtualMachineRG": {
+            "value": "sans1weursgcldk8stech001"
+        },
+        "osDiskName": {
+            "value": "rnode_OSDisk_0"
+        },		
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2_v2"
+        },
+        "adminUsername": {
+            "value": "rancher"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+sRdqC/Vp7BxOPa9oW7NoQN3uI0nprWPd77D4y/m9cHWmcdEBBJYEXTsExhk8YvmsL3DXuEo3bONAoc7fPXw59kRb5gUvbQE0HkW0zmj3kAE0K0dmobfwnU3c2G2+8BZ2f2p709aXjmFY22L89zaLb+OkJIolFMv8x5XSXZSJIZ+Ql+l3fTnj3oj4M8UWt0Qpa6Ka564u+y7L0XIvJws9hCZf++M18sU/BkBnqCcexwtwIAtnryu/kC6t0J+FNgSiQptVkIOoRWgHDsyleLsJBztPdSHAAiVmEFqkbHMoCAXe+kZ5Wk+OebEAqQWJ0Cns4yoqv7s9MPFadYRo7anl7TxVMJ8zq6xUPZ6089NjX7l/MnTcXQiOdk5qf/9KIqUwkl/QGZjukzNCRvTy2HkcB2IREdUCyJnAlzCMmpd6nEfDFxNVhLgvr2wTgO8zmqADC3X+WKz+WwvdS/abBxZGfzLVsu1QmbByq+yKb0vdYPVqD0ZXN9psl+N57NWQrGRkzBcy9IGg+Gp7kyY5u8c7QMwsJX5sog7auB0XozM+cAFSyJhvepMAMsczp1yd8oSuH/ueQ/p59tzDAHmifYJZS8wODKbm7hfF9e9kSq7dKjpwfwIDsaJ0JRpklt/HJsDEdZoEu/RIb4NNMSR0oWsO0pil82f71xnznfLbONSb5w== alejandro.batalla@extern.isban.com"
+        },
+        "publicDnsName": {
+            "value": "rnode"
+        },		
+        "diagnosticsStorageAccountName": {
+            "value": "sans1weursgcldk8stech001"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/8bfeca61-c921-4fa0-8ac0-eb62b7072a01/resourceGroups/sans1weursgcldk8stech001/providers/Microsoft.Storage/storageAccounts/sans1weursgcldk8stech001"
+        }
+    }
+}
